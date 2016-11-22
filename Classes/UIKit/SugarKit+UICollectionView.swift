@@ -8,9 +8,11 @@ extension UICollectionViewCell {
 }
 
 extension UICollectionView {
-    func registerClass(cellClass: AnyClass?) {
-        if let cellClass = cellClass as? UICollectionViewCell.Type {
-            register(cellClass, forCellWithReuseIdentifier: cellClass.identifier())
-        }
+    func registerClass<T: UICollectionViewCell>(_ cellClass: T.Type) {
+        register(cellClass, forCellWithReuseIdentifier: cellClass.identifier())
+    }
+
+    func dequeueReusableCell<T: UICollectionViewCell>(_ cellClass: T.Type, forIndexPath: IndexPath) -> T {
+        return dequeueReusableCell(withReuseIdentifier: cellClass.identifier(), for: forIndexPath) as! T
     }
 }

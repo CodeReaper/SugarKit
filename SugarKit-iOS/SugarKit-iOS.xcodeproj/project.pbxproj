@@ -12,11 +12,14 @@
 		EB50504C1DE4B7C10034AA40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB50504A1DE4B7C10034AA40 /* Main.storyboard */; };
 		EB50504E1DE4B7C10034AA40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB50504D1DE4B7C10034AA40 /* Assets.xcassets */; };
 		EB5050511DE4B7C10034AA40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB50504F1DE4B7C10034AA40 /* LaunchScreen.storyboard */; };
-		EB50505C1DE4B7C10034AA40 /* SugarKit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50505B1DE4B7C10034AA40 /* SugarKit_iOSTests.swift */; };
 		EB50506D1DE4B8920034AA40 /* SugarKit+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5050691DE4B8920034AA40 /* SugarKit+UICollectionView.swift */; };
 		EB50506E1DE4B8920034AA40 /* SugarKit+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50506A1DE4B8920034AA40 /* SugarKit+UINavigationController.swift */; };
 		EB50506F1DE4B8920034AA40 /* SugarKit+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50506B1DE4B8920034AA40 /* SugarKit+UITableView.swift */; };
 		EB5050701DE4B8920034AA40 /* SugarKit+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50506C1DE4B8920034AA40 /* SugarKit+UIView.swift */; };
+		EB5050721DE4C4550034AA40 /* Test_UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5050711DE4C4550034AA40 /* Test_UICollectionView.swift */; };
+		EB5050741DE4C5D40034AA40 /* Test_UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5050731DE4C5D40034AA40 /* Test_UINavigationController.swift */; };
+		EB5050761DE4C5E10034AA40 /* Test_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5050751DE4C5E10034AA40 /* Test_UIView.swift */; };
+		EB5050781DE4C8600034AA40 /* Test_UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5050771DE4C8600034AA40 /* Test_UITableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +41,15 @@
 		EB5050501DE4B7C10034AA40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB5050521DE4B7C10034AA40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB5050571DE4B7C10034AA40 /* SugarKit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SugarKit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB50505B1DE4B7C10034AA40 /* SugarKit_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarKit_iOSTests.swift; sourceTree = "<group>"; };
 		EB50505D1DE4B7C10034AA40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB5050691DE4B8920034AA40 /* SugarKit+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SugarKit+UICollectionView.swift"; sourceTree = "<group>"; };
 		EB50506A1DE4B8920034AA40 /* SugarKit+UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SugarKit+UINavigationController.swift"; sourceTree = "<group>"; };
 		EB50506B1DE4B8920034AA40 /* SugarKit+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SugarKit+UITableView.swift"; sourceTree = "<group>"; };
 		EB50506C1DE4B8920034AA40 /* SugarKit+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SugarKit+UIView.swift"; sourceTree = "<group>"; };
+		EB5050711DE4C4550034AA40 /* Test_UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test_UICollectionView.swift; sourceTree = "<group>"; };
+		EB5050731DE4C5D40034AA40 /* Test_UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test_UINavigationController.swift; sourceTree = "<group>"; };
+		EB5050751DE4C5E10034AA40 /* Test_UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test_UIView.swift; sourceTree = "<group>"; };
+		EB5050771DE4C8600034AA40 /* Test_UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test_UITableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +105,11 @@
 		EB50505A1DE4B7C10034AA40 /* SugarKit-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				EB50505B1DE4B7C10034AA40 /* SugarKit_iOSTests.swift */,
 				EB50505D1DE4B7C10034AA40 /* Info.plist */,
+				EB5050711DE4C4550034AA40 /* Test_UICollectionView.swift */,
+				EB5050731DE4C5D40034AA40 /* Test_UINavigationController.swift */,
+				EB5050771DE4C8600034AA40 /* Test_UITableViewCell.swift */,
+				EB5050751DE4C5E10034AA40 /* Test_UIView.swift */,
 			);
 			path = "SugarKit-iOSTests";
 			sourceTree = "<group>";
@@ -232,7 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB50505C1DE4B7C10034AA40 /* SugarKit_iOSTests.swift in Sources */,
+				EB5050761DE4C5E10034AA40 /* Test_UIView.swift in Sources */,
+				EB5050781DE4C8600034AA40 /* Test_UITableViewCell.swift in Sources */,
+				EB5050721DE4C4550034AA40 /* Test_UICollectionView.swift in Sources */,
+				EB5050741DE4C5D40034AA40 /* Test_UINavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +442,7 @@
 				EB5050621DE4B7C10034AA40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB5050631DE4B7C10034AA40 /* Build configuration list for PBXNativeTarget "SugarKit-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +451,7 @@
 				EB5050651DE4B7C10034AA40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
