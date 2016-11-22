@@ -10,7 +10,7 @@ extension UICollectionViewCell {
 extension UICollectionView {
     func registerClass(cellClass: AnyClass?) {
         if let cellClass = cellClass as? UICollectionViewCell.Type {
-            registerClass(cellClass, forCellWithReuseIdentifier: cellClass.identifier())
+            register(cellClass, forCellWithReuseIdentifier: cellClass.identifier())
         }
     }
 }

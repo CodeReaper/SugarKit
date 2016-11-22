@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/CodeReaper/SugarKit.git", :tag => "#{s.version}" }
 
-  s.default_subspecs = 'Core'
+  s.default_subspecs = 'UIKit'
 
-  s.subspec 'Core' do |ss|
-    ss.source_files = 'Classes/Core/*.swift'
+  s.subspec 'UIKit' do |ss|
+    ss.source_files = 'Classes/UIKit/*.swift'
   end
 
   s.requires_arc = true
