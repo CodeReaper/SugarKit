@@ -19,4 +19,4 @@ script:
     - set -o pipefail
 
     - echo Run iOS tests
-    - xcodebuild clean test -project SugarKit-iOS/SugarKit-iOS.xcodeproj -scheme 'SugarKit-iOS' -sdk iphonesimulator PLATFORM_NAME=iphonesimulator -configuration Release | xcpretty -c
+    - xcodebuild -scheme 'SugarKit-iOS' -project SugarKit-iOS/SugarKit-iOS.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s' clean build test | xcpretty -c
