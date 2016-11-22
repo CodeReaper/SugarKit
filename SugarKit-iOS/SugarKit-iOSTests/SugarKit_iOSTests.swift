@@ -25,4 +25,23 @@ class SugarKit_iOSTests: XCTestCase {
 
         XCTAssert(superview.subviews[0] == subview)
     }
+
+    func testUINavigationController() {
+        let navigationController = UINavigationController()
+        XCTAssert(navigationController.viewControllers.count == 0)
+
+        let numberOfViewControllers = 9
+
+        for _ in 1...numberOfViewControllers {
+            let viewController = UIViewController()
+            navigationController.pushViewController(viewController, animated: false)
+        }
+        XCTAssert(navigationController.viewControllers.count == numberOfViewControllers)
+
+        navigationController.pop(animated: false)
+        XCTAssert(navigationController.viewControllers.count == numberOfViewControllers - 1)
+
+        navigationController.popToRoot(animated: false)
+        XCTAssert(navigationController.viewControllers.count == 1)
+    }
 }
