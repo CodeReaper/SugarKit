@@ -29,4 +29,6 @@ jobs:
           git tag -f ${{ github.event.inputs.target }}
           git tag -f ${{ github.event.inputs.main_version }} ${{ github.event.inputs.target }}
       - name: Push new tags
-        run: git push origin ${{ github.event.inputs.main_version }} --force
+        run: |
+          git push origin ${{ github.event.inputs.target }}
+          git push origin ${{ github.event.inputs.main_version }} --force
